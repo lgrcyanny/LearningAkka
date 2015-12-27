@@ -19,3 +19,7 @@ project/plugins/project/
 *.iml
 
 test-scripts.sc
+magi.*
+pingo.*
+testing
+test.*

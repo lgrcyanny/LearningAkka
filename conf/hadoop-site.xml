@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+    <!-- NEEDED TO CHANGE -->
+
+    <property>
+        <name>shaded.hdfs.impl</name>
+        <value>org.apache.hadoop.hdfs.DistributedFileSystem</value>
+    </property>
+
+    <property>
+        <name>hadoop.job.ugi</name>
+        <value>test,test</value>
+        <description>username, password used by client</description>
+    </property>
+
+    <property>
+        <name>fs.default.name</name>
+        <value>hdfs://localhost:9000</value>
+        <description>The name of the default file system.  A URI whose
+            scheme and authority determine the FileSystem implementation.  The
+            uri's scheme determines the config property (fs.SCHEME.impl) naming
+            the FileSystem implementation class.  The uri's authority is used to
+            determine the host, port, etc. for a filesystem.</description>
+    </property>
+
+</configuration>
+
