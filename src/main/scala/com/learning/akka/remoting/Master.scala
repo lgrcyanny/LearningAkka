@@ -14,6 +14,7 @@ class Master(actorSystem: ActorSystem) {
   class MasterActor extends Actor{
     override def preStart() = {
       println(s"MasterActor started ${self.path.toString}")
+      println(s"${self.path.toStringWithoutAddress}")
     }
     def receive = {
       case RegisterWorker(workerId) =>
